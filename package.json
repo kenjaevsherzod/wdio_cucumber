@@ -1,0 +1,25 @@
+{
+    "name": "webdriverio-with-cucumberjs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "wdio": "wdio run wdio.conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://git.epam.com/taofeek_adesina/webdriverio-with-cucumberjs.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@wdio/cli": "^7.19.7",
+        "@wdio/cucumber-framework": "^7.19.7",
+        "@wdio/local-runner": "^7.19.7",
+        "chromedriver": "^101.0.0",
+        "wdio-chromedriver-service": "^7.3.2",
+        "wdio-cucumberjs-json-reporter": "^4.4.1"
+    }
+}
