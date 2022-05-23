@@ -18,7 +18,6 @@ Feature: Gmail Functionality
         Given I am on inbox page
         When I click the last message
         Then It should open email content
-
     @smoke
     Scenario: Check if compose button is clickable and it has 'Compose' keyword
         Given I am on inbox page
