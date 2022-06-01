@@ -4,7 +4,7 @@ const Gmail = require("../../pom/Gmail");
 
 Then(/^I login with valid credentials$/, async () => {
   await Gmail.enterUsername("demosherzod");
-  await browser.pause(3000);
+  await browser.pause(5000);
   await Gmail.enterPassword("123456@demo");
 });
 

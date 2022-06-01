@@ -17,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^8.2.1",
+    "@wdio/allure-reporter": "^7.19.7",
     "@wdio/cli": "^7.19.7",
     "@wdio/cucumber-framework": "^7.19.7",
     "@wdio/local-runner": "^7.19.7",

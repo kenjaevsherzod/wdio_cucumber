@@ -20,7 +20,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./features/**/*.feature"],
+  specs: ["./features/**/Sherzod.feature"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -133,10 +133,9 @@ exports.config = {
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: [
     [
-      "cucumberjs-json",
+      "allure",
       {
-        jsonFolder: "./reports/",
-        language: "en",
+        outputDir: "allure-results",
       },
     ],
   ],

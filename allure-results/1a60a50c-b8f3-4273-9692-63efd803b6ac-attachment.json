@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "tr[aria-labelledby=\":28\"]"
+}
