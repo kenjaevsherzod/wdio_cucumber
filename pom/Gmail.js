@@ -15,7 +15,9 @@ class Gmail extends BasePage {
   }
 
   get btnSubmit() {
-    return $('span[jsname="V67aGc"]');
+    return $(
+      'button[class="VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc qfvgSe qIypjc TrZEUc lw1w4b"]'
+    );
   }
 
   get settingsIcon() {
