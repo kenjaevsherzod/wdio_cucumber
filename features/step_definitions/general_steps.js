@@ -33,7 +33,7 @@ When(/^I click the last message$/, async () => {
 });
 
 Then(/^It should open email content$/, async () => {
-  await Gmail.backwords();
+  await Gmail.open("https://mail.google.com/mail/u/0/#inbox");
 });
 
 When(/^I click the Compose button$/, async () => {
