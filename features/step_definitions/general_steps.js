@@ -4,7 +4,7 @@ const Gmail = require("../../pom/Gmail");
 
 Then(/^I login with valid credentials$/, async () => {
   await Gmail.enterUsername("demosherzod");
-  await browser.pause(5000);
+  await browser.pause(3000);
   await Gmail.enterPassword("123456@demo");
 });
 
@@ -40,13 +40,15 @@ When(/^I click the Compose button$/, async () => {
   await Gmail.composeClick();
 });
 
-Then(
-  /^It should open compose modal and should have Compose title$/,
-  async () => {
-    const compose = await $('div[jscontroller="eIu7Db"]').getText();
-    await expect(compose).toHaveText("Compose");
-  }
-);
+// Then(
+//   /^It should open compose modal and should have Compose title$/,
+//   async () => {
+//     const composeButton = await $('div[class="T-I T-I-KE L3"]');
+//     await composeButton.waitForExist();
+//     const compose = await composeButton.getText();
+//     await expect(compose).toHaveText("Compose");
+//   }
+// );
 
 Then(
   /^It should enter email address into "To", "Cc" and "Bcc" fields$/,

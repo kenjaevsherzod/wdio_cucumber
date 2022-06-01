@@ -37,7 +37,7 @@ class Gmail extends BasePage {
   }
 
   get firstEmail() {
-    return $('tr[aria-labelledby=":28"]');
+    return $('tr[aria-labelledby=":29"]');
   }
 
   get goBack() {
