@@ -99,7 +99,7 @@ class Gmail extends BasePage {
 
   //Methods to go to settings page and change language
   async settingClick() {
-    await this.settingsIcon.waitForExist();
+    await this.settingsIcon.waitForExist({ timeout: 20000 });
     await this.settingsIcon.click();
   }
 
